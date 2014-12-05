@@ -1,0 +1,58 @@
+/*!
+ 
+ * Village Css
+ * Copyright 2014 Gratitude Village
+ */
+
+
+ html, body{
+ 
+	}
+ body {
+	background-color:#FDF37A;
+	margin:0;
+	padding :0;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+#container{
+	width:65%;
+	margin:0 auto;
+	background-color:#FEFFD6;
+	padding: 20px;
+	/*height: 100%;*/
+	box-sizing: border-box;
+	}
+#grateful_list li{
+	list-style-type: none;
+}
+
+#submit_btn {
+	width: 50px;
+	height: 22px;
+	background: #5BB7B6;
+	color: #FFFFFF;
+	border :0;
+	padding: 2px 5px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #f5f5f5;
+}
+

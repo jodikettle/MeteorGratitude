@@ -1,0 +1,49 @@
+<head>
+   <title>Meteor on Nitrous</title>
+ </head>
+ <body>
+<div id="container">
+<header>
+	<a href="#"><img src="logo.png"/></a>
+       {{> loginButtons}}
+</header>
+<section id="content">
+	<h3>Today I am grateful for....</h3>
+{{> list}}
+<h3>What are you grateful for?</h3>
+{{#if currentUser}}
+{{> postGrat}}
+{{else}}
+{{> showLoginMessage}}
+{{/if}}
+</section>
+
+</div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Gratitude Village Inc</p>
+      </div>
+    </footer>
+</body>
+
+<template name="welcomePage">
+{{#if currentUser}}
+           You are now logged in.
+         {{/if}}
+  <p>Welcome to my website!</p>
+</template>
+
+<template name="list">
+<ul id="grateful_list">
+ {{#each posts }}
+  <li>{{user}}-{{name}}</li>
+  {{/each}}
+</ul>
+</template>
+<template name="postGrat">
+	
+	<input id="textboc" type="text"/><input id="submit_btn" type="button" value="Post"/>
+</template>
+<template name="showLoginMessage">
+ Please log in to post
+</template>
